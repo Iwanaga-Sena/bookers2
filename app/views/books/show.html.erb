@@ -63,7 +63,7 @@
                         </tr>
                     <% end %>
                     <tr>
-                        <%= form_with model: [@book, @book_comment] do |f| %>
+                        <%= form_with model: [@book, @new_book_comment] do |f| %>
                             <div class="form-group">
                                 <%= f.text_area :comment, rows: '5', class: "form-control" %>
                             </div>
