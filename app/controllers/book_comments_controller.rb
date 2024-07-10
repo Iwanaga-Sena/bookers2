@@ -8,7 +8,6 @@ class BookCommentsController < ApplicationController
     else
       @book = book
       @user = book.user
-      @new_book = Book.new
       render :'books/show'
     end
 
