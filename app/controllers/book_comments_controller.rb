@@ -6,8 +6,10 @@ class BookCommentsController < ApplicationController
     if comment.save
       redirect_to book_path(book)
     else
-      flash[:alert] = comment.errors.full_messages.to_sentence
-      redirect_to book_path(book)
+      @book = book
+      @user = book.user
+      @new_book = Book.new
+      render :'book/show'
     end
 
   end
