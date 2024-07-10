@@ -7,6 +7,14 @@
         <% end %>
         </ul>
     <% end %>
+    <% if @new_book.errors.any? %>
+        <%= @new_book.errors.count %>件のエラーが発生しました
+        <ul>
+        <% @new_book.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+        <% end %>
+        </ul>
+    <% end %>
     <div class="row">
         <div class="col-md-3">
             <%= render 'users/info', user:@user %> 
