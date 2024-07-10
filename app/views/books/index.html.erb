@@ -37,9 +37,10 @@
                                 <% end %>
                             </td>
                             <td>
-                                <%= link_to book_path(book.id) do %>
-                                    <%= book.body %>
-                                <% end %>
+                                <%= book.body %>
+                            </td>
+                            <td>
+                                コメント数：<%= @book.book_comments.count %>
                             </td>
                         </tr>
                     <% end %>
