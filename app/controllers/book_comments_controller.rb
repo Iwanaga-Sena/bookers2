@@ -9,7 +9,7 @@ class BookCommentsController < ApplicationController
       @book = book
       @user = book.user
       @new_book = Book.new
-      render :'book/show'
+      render :'books/show'
     end
 
   end
