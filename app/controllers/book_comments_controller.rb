@@ -6,7 +6,7 @@ class BookCommentsController < ApplicationController
     if comment.save
       redirect_to book_path(book)
     else
-      render :show
+      render :'books/show'
     end
 
   end
