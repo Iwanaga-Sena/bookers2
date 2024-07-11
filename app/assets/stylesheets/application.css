@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+ .bold-text {
+    font-weight: bold;
+ }
